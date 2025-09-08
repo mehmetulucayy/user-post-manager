@@ -1,0 +1,42 @@
+.homePage {
+  text-align: center;
+  padding: 6rem 2rem;
+  min-height: calc(100vh - 80px); /* Ekran yüksekliğine uyum */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.homePage h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #34495e;
+}
+
+.homePage p {
+  font-size: 1.2rem;
+  color: #7f8c8d;
+  margin-bottom: 2rem;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.links a {
+  background-color: #3498db;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.links a:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+}

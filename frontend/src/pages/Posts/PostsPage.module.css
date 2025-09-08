@@ -1,0 +1,164 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.formContainer {
+  background-color: #fefefe;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.formContainer h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #34495e;
+}
+
+.formContainer input,
+.formContainer textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+  margin-bottom: 1rem;
+}
+
+.formContainer input:focus,
+.formContainer textarea:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+.formContainer textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.addButton,
+.updateButton,
+.cancelButton {
+  padding: 12px 24px;
+  font-weight: 500;
+  border-radius: 4px;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.addButton {
+  background-color: #2ecc71;
+}
+
+.addButton:hover {
+  background-color: #27ae60;
+}
+
+.updateButton {
+  background-color: #f1c40f;
+  color: #2c3e50;
+}
+
+.updateButton:hover {
+  background-color: #f39c12;
+}
+
+.cancelButton {
+  background-color: #95a5a6;
+}
+
+.cancelButton:hover {
+  background-color: #7f8c8d;
+}
+
+.userTable,
+.postsTable {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.userTable th,
+.userTable td,
+.postsTable th,
+.postsTable td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.userTable th,
+.postsTable th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  color: #333;
+}
+
+.userTable tr:last-child td,
+.postsTable tr:last-child td {
+  border-bottom: none;
+}
+
+.userTable tr:hover,
+.postsTable tr:hover {
+  background-color: #fcfcfc;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center; /* Butonları dikeyde hizalar */
+}
+
+.editButton,
+.deleteButton {
+  flex: 1; /* Bu satır, butonların eşit genişlikte olmasını sağlar */
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+  text-align: center; /* Buton içindeki yazıyı ortalar */
+  border: none; /* Buton kenarlıklarını kaldırır */
+}
+
+.editButton {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.editButton:hover {
+  background-color: #2980b9;
+}
+
+.deleteButton {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+.deleteButton:hover {
+  background-color: #c0392b;
+}
+
+@media (max-width: 768px) {
+  .formContainer input,
+  .formContainer textarea {
+    width: 100%;
+    margin-right: 0;
+  }
+}

@@ -1,0 +1,11 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto; /* Sayfayı ortalar */
+  padding: 2rem 1rem; /* İç boşluklar */
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+}
